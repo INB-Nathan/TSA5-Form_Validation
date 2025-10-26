@@ -1,0 +1,20 @@
+Before programming the needed system, first identify what are the roles and ano ung mga needed na data from the user.
+
+Since ung theme ng system ko is an online bakery shop, customer and admin ung needed na roles.
+
+Ano mga pwedeng gawin ni customer? Login, view available items, and view their own profile
+Si admin, login, view alist of registered users, and perform user maintenance, and CRUD operations on items
+
+Data to be gathered from the user is:
+Email, Username, Password. wala ng full name kasi di naman need ihandle ng system ko ung full name, it is just a online bakery shop not an student portal. This way ung system is compliant with data minimization by avoiding unnecessary fields upfront.
+
+now lets start sa database muna, pano istrustructure ung tables and ano ung rows and primary keys/foreign keys.
+
+three tables: user, customer, products, orders, order_items.
+
+user is ung needed details para mag login, customer table is connected to the user since may instances na need ng name, phone no, and address for delivery.
+
+products is the bakery items
+
+orders is the customer orders, and order items is for normalizing order details, para ma avoid natin ung redudancy.
+
